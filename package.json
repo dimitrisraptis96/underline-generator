@@ -7,7 +7,6 @@
     "js",
     "javascript"
   ],
-  "homepage": "https://github.com/dimitrisraptis96/underline-generator",
   "private": true,
   "dependencies": {
     "grommet": "^2.2.1",
