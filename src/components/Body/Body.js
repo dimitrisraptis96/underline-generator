@@ -1,10 +1,9 @@
 import React from "react";
 
 import Controls from "./Controls/Controls";
-import CustomInput from "./CustomInput/CustomInput";
 import Display from "./Display/Display";
 
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 const Container = styled.div`
   width: 80%;
@@ -22,10 +21,6 @@ const Container = styled.div`
   @media (max-width: 767px) {
     width: 100%;
   }
-`;
-
-const Text = styled.span`
-  ${(props) => props.css}
 `;
 
 const Body = ({
