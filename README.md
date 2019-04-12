@@ -1,11 +1,26 @@
-# 🗡️ underline-generator
+
+<h1 align='center'>
+  Underline Generator
+</h1>
+
+&nbsp;
 
 <p align='center'>
-  <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/198/fencer_1f93a.png" alt="fencer emoji"/>
+  <img src="./static/fencer.png" alt="fencer emoji"/>
 </p>
-Generate neat undelines and embed them in your project.
+
+&nbsp;
+
+Generate neat CSS undelines and embed them in your project.
 
 Check the **[app](https://underline-generator.netlify.com/)** now.
+
+&nbsp;
+
+##  Usage
+
+Customize your fancy underline and press the copy button to get your CSS class.
+Then, just wrap your text with a `<span>` element and paste the generated CSS. 
 
 ## 🔥 TODO
 
