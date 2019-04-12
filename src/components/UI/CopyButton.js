@@ -15,6 +15,7 @@ const StyledTooltip = styled(Tooltip)`
     border-radius: 8px !important;
     font-size: 12px;
     font-weight: normal;
+    font-family: "Prompt", sans-serif;
   }
 `;
 
