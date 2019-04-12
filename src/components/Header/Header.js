@@ -21,6 +21,22 @@ const Bold = styled.h1`
   font-weight: bold;
   font-size: 1.35rem;
   text-align: center;
+
+  > span {
+    background-image: linear-gradient(
+      120deg,
+      ${neutral[100]},
+      ${neutral[100]} 100%
+    );
+    background-repeat: no-repeat;
+    background-size: 100% 0.3em;
+    background-position: 0 80%;
+    transition: background-size 0.25s ease-in;
+
+    &:hover {
+      background-size: 100% 88% !important;
+    }
+  }
 `;
 
 const IconWrapper = styled.div`
@@ -37,7 +53,8 @@ const Header = ({ baseColor, gradient }) => {
         gradient={gradient}
       />
       <Bold>
-        Underline Generator <sup style={{ fontSize: ".75rem" }}>&copy;</sup>
+        <span>Underline Generator</span>
+        <sup style={{ fontSize: ".75rem" }}>&copy;</sup>
       </Bold>
     </LogoWrapper>
   );
