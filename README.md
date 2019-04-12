@@ -9,7 +9,7 @@
   <img src="./static/fencer.png" alt="fencer emoji"/>
 </p>
 
-&nbsp;
+
 
 Generate neat CSS undelines and embed them in your project.
 
@@ -17,7 +17,7 @@ Check the **[app](https://underline-generator.netlify.com/)** now.
 
 &nbsp;
 
-##  Usage
+## 🍻 Usage
 
 Customize your fancy underline and press the copy button to get your CSS class.
 Then, just wrap your text with a `<span>` element and paste the generated CSS. 
