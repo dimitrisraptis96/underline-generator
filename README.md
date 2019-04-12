@@ -1,7 +1,8 @@
-
 <h1 align='center'>
   Underline Generator
 </h1>
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/58e0540d-07b1-40cb-96e9-5922acec705f/deploy-status)](https://app.netlify.com/sites/underline-generator/deploys)
 
 &nbsp;
 

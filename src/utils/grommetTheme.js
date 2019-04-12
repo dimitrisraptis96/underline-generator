@@ -3,12 +3,14 @@ import { deepMerge } from "grommet/utils";
 
 import { neutral, light } from "./theme";
 
-const customTheme = (color) =>
+const customTheme = color =>
   deepMerge(grommet, {
     global: {
       spacing: "12px",
       focus: { border: { color: color } },
-      backgroundColor: light,
+      colors: {
+        background: light,
+      },
     },
     rangeInput: {
       track: {
