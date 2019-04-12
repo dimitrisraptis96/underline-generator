@@ -1,16 +1,9 @@
 import React from "react";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
 import { RangeInput } from "grommet";
 
-const Slider = ({
-  min,
-  max,
-  step,
-  value,
-  onChange,
-}) => {
-
+const Slider = ({ min, max, step, value, onChange }) => {
   return (
     <RangeInput
       min={min}
@@ -22,7 +15,7 @@ const Slider = ({
   );
 };
 
-const getRandomInt = (max) => Math.floor(Math.random() * Math.floor(max));
+const getRandomInt = max => Math.floor(Math.random() * Math.floor(max));
 
 Slider.propTypes = {
   min: PropTypes.number,
@@ -36,7 +29,7 @@ Slider.defaultProps = {
   min: 0,
   max: 1,
   step: 0.1,
-  value: 0.1*getRandomInt(10),
+  value: 0.1 * getRandomInt(10),
   onChange: () => {},
 };
 

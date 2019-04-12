@@ -5,7 +5,7 @@ import { neutral } from "../../utils/theme";
 const Wrapper = styled.div`
   max-width: 100%;
   margin-top: 2em;
-  padding: 2em 0 1em 0;
+  padding-top: 2em;
 
   display: flex;
   justify-content: center;
@@ -20,7 +20,7 @@ const Sup = styled.sup`
 `;
 
 const A = styled.a`
-  color: ${(props) => props.baseColor};
+  color: ${props => props.baseColor};
   font-weight: bold;
   font-size: 0.75rem;
 `;

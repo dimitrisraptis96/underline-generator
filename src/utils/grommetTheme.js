@@ -8,9 +8,6 @@ const customTheme = color =>
     global: {
       spacing: "12px",
       focus: { border: { color: color } },
-      colors: {
-        background: light,
-      },
     },
     rangeInput: {
       track: {
