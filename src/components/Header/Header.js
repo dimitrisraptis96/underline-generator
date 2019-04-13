@@ -54,7 +54,7 @@ const Header = ({ baseColor, gradient }) => {
       />
       <Bold>
         <span>Underline Generator</span>
-        <sup style={{ fontSize: ".75rem" }}>&copy;</sup>
+        <sup style={{ fontSize: ".75rem" }}>&nbsp; &copy;</sup>
       </Bold>
     </LogoWrapper>
   );
