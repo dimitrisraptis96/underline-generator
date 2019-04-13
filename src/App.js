@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 
-import Icon from "react-eva-icons";
 import { Grommet } from "grommet";
 
 import Header from "./components/Header/Header";
 import Body from "./components/Body/Body";
 import Footer from "./components/Footer/Footer";
+import GithubCTA from "./components/UI/GithubCTA";
 
 import { neutral, light } from "./utils/theme";
 import grommetTheme from "./utils/grommetTheme";
@@ -67,22 +67,9 @@ const App = props => {
 
   return (
     <Grommet theme={grommetTheme(baseColor)}>
+      <GithubCTA baseColor={baseColor} />
+
       <Wrapper>
-        <CTA
-          baseColor={baseColor}
-          href="https://github.com/dimitrisraptis96/underline-generator"
-        >
-          <Icon
-            name="github"
-            fill="black"
-            size="large"
-            animation={{
-              type: "pulse",
-              hover: false,
-              infinite: false,
-            }}
-          />
-        </CTA>
         <Header baseColor={baseColor} gradient={gradient} />
         <Body {...props} baseColor={baseColor} />
         <Footer baseColor={baseColor} />
