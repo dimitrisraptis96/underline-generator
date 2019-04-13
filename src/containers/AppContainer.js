@@ -10,8 +10,21 @@ class AppContainer extends React.Component {
     gradient: ["#ec008c", "#fc6767"],
   };
 
-  handleChange = (name) => (event) => {
+  handleChange = name => event => {
     this.setState({ [name]: event.target.value });
+  };
+
+  isMobileDevice = () => {
+    return (
+      typeof window.orientation !== "undefined" ||
+      navigator.userAgent.indexOf("IEMobile") !== -1
+    );
+  };
+
+  getDisplayText = () => {
+    return this.isMobileDevice()
+      ? "Hey buddy! Dare you to open me on a desktop!"
+      : "Hey buddy! Dare you to hover me!";
   };
 
   getCSS = () => {
@@ -51,7 +64,7 @@ class AppContainer extends React.Component {
   render() {
     const { gradient, position, weight } = this.state;
     const baseColor = gradient[0];
-
+    const displayText = this.getDisplayText();
     const { mixin, text } = this.getCSS();
 
     return (
@@ -59,6 +72,7 @@ class AppContainer extends React.Component {
         cssCode={mixin}
         cssToCopied={text}
         baseColor={baseColor}
+        displayText={displayText}
         gradient={gradient}
         position={position}
         weight={weight}

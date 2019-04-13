@@ -27,6 +27,7 @@ const Body = ({
   cssCode,
   cssToCopied,
   baseColor,
+  displayText,
   gradient,
   position,
   weight,
@@ -34,7 +35,7 @@ const Body = ({
 }) => {
   return (
     <Container>
-      <Display cssCode={cssCode} text={"Hey buddy! Dare you to hover me!"} />
+      <Display cssCode={cssCode} text={displayText} />
 
       <Controls
         cssCode={cssCode}
