@@ -1,13 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 
+import Icon from "react-eva-icons";
 import { Grommet } from "grommet";
 
 import Header from "./components/Header/Header";
 import Body from "./components/Body/Body";
 import Footer from "./components/Footer/Footer";
 
-import { light } from "./utils/theme";
+import { neutral, light } from "./utils/theme";
 import grommetTheme from "./utils/grommetTheme";
 
 const Wrapper = styled.div`
@@ -25,12 +26,55 @@ const Wrapper = styled.div`
   font-family: "Prata", serif;
 `;
 
-const App = (props) => {
+const CTA = styled.a`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  align-self: flex-end;
+
+  cursor: pointer;
+
+  font-family: "Prompt", sans-serif;
+  font-size: 1rem;
+  color: ${neutral[300]};
+  svg {
+    fill: ${neutral[300]};
+    margin-right: 0.5rem;
+  }
+
+  text-decoration: none;
+
+  &:hover {
+    color: ${props => props.baseColor};
+    svg {
+      fill: ${props => props.baseColor};
+    }
+  }
+`;
+
+const App = props => {
   const { baseColor, gradient } = props;
 
   return (
     <Grommet theme={grommetTheme(baseColor)}>
       <Wrapper>
+        <CTA
+          baseColor={baseColor}
+          href="https://github.com/dimitrisraptis96/underline-generator"
+        >
+          <Icon
+            name="github"
+            fill="black"
+            size="large"
+            animation={{
+              type: "pulse",
+              hover: false,
+              infinite: false,
+            }}
+          />
+        </CTA>
         <Header baseColor={baseColor} gradient={gradient} />
         <Body {...props} baseColor={baseColor} />
         <Footer baseColor={baseColor} />

@@ -50,9 +50,7 @@ const Option = ({ children, icon, title }) => {
           name={icon}
           size="medium"
           animation={{
-            type: "pulse",
-            hover: true,
-            infinite: false,
+            hover: false,
           }}
           fill={neutral[300]}
         />
