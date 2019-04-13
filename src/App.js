@@ -27,6 +27,10 @@ const Wrapper = styled.div`
 `;
 
 const CTA = styled.a`
+  position: absolute;
+  top: 32px;
+  right: 32px;
+
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -41,7 +45,7 @@ const CTA = styled.a`
   color: ${neutral[300]};
   svg {
     fill: ${neutral[300]};
-    margin-right: 0.5rem;
+    /* margin-right: 0.5rem; */
   }
 
   text-decoration: none;
@@ -51,6 +55,10 @@ const CTA = styled.a`
     svg {
       fill: ${props => props.baseColor};
     }
+  }
+
+  &:focus {
+    outline-color: ${props => props.baseColor};
   }
 `;
 

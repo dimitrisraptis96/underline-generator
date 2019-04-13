@@ -23,6 +23,10 @@ const A = styled.a`
   color: ${props => props.baseColor};
   font-weight: bold;
   font-size: 0.75rem;
+
+  &:focus {
+    outline-color: ${props => props.baseColor};
+  }
 `;
 
 const Footer = ({ baseColor }) => {
