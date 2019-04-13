@@ -53,6 +53,7 @@ const Controls = ({
             min={0}
             max={100}
             step={10}
+            label="position"
             onChange={handleChange("position")}
           />
         </Option>
@@ -63,6 +64,7 @@ const Controls = ({
             min={0.1}
             max={1}
             step={0.1}
+            label="weight"
             onChange={handleChange("weight")}
           />
         </Option>

@@ -44,7 +44,11 @@ const CTA = styled.a`
 
 const GithubCTA = ({ baseColor }) => {
   return (
-    <CTA baseColor={baseColor} href={GITHUB_URL}>
+    <CTA
+      baseColor={baseColor}
+      href={GITHUB_URL}
+      aria-label="Check the github repo"
+    >
       <Icon
         name="github"
         fill="black"
