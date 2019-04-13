@@ -33,7 +33,7 @@ const Footer = ({ baseColor }) => {
   return (
     <Wrapper>
       <Sup>
-        Designed and Build by{" "}
+        Designed and Built by{" "}
         <A href="https://twitter.com/d__raptis" baseColor={baseColor}>
           @draptis
         </A>
