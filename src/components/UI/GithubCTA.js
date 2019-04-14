@@ -1,11 +1,29 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 import Icon from "react-eva-icons";
 
 import { neutral } from "../../utils/theme";
 
 const GITHUB_URL = "https://github.com/dimitrisraptis96/underline-generator";
+
+const bounce = keyframes`
+	0%, 100%, 20%, 50%, 80% {
+		-webkit-transform: translateY(0);
+		-ms-transform:     translateY(0);
+		transform:         translateY(0)
+	}
+	40% {
+		-webkit-transform: translateY(-16px);
+		-ms-transform:     translateY(-16px);
+		transform:         translateY(-16px)
+	}
+	60% {
+		-webkit-transform: translateY(-8px);
+		-ms-transform:     translateY(-8px);
+		transform:         translateY(-8px)
+	}
+`;
 
 const CTA = styled.a`
   position: absolute;
@@ -30,7 +48,19 @@ const CTA = styled.a`
 
   text-decoration: none;
 
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+
   &:hover {
+    animation-name: ${bounce};
+    -moz-animation-name: ${bounce};
+
     color: ${props => props.baseColor};
     svg {
       fill: ${props => props.baseColor};
