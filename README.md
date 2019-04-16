@@ -28,8 +28,8 @@ Then, just wrap your text with a `<span>` element and paste the generated CSS.
 - [x] Polish copy button (functionality & effects)
 - [x] Hover text effect
 - [x] Update icons
-- [ ] Gradient picker
-- [ ] Add animations
+- [X] Gradient picker
+- [X] Add animations
 - [ ] Special version that generates abstarct underlines
 
 ## 🏛️ License
