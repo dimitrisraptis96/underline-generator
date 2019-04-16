@@ -34,4 +34,4 @@ Then, just wrap your text with a `<span>` element and paste the generated CSS.
 
 ## 🏛️ License
 
-[MIT](https://opensource.org/licenses/MIT)
+[MIT](./LICENSE)
