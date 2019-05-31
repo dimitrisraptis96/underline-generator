@@ -7,7 +7,9 @@
 &nbsp;
 
 <p align='center'>
-  <img src="./static/fencer.png" alt="fencer emoji"/>
+  <a href="https://underline-generator.netlify.com/" targe="_blank">
+    <img src="./static/fencer.png" alt="fencer emoji"/>
+  </a>
 </p>
 
 Generate neat CSS undelines and embed them in your project.
