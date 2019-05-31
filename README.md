@@ -32,6 +32,7 @@ Then, just wrap your text with a `<span>` element and paste the generated CSS.
 - [x] Update icons
 - [X] Gradient picker
 - [X] Add animations
+- [ ] Add code modal 
 - [ ] Special version that generates abstarct underlines
 
 ## 🏛️ License
