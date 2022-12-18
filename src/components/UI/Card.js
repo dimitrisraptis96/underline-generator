@@ -6,6 +6,8 @@ const Card = styled.div`
   padding: 1rem;
   width: 100%;
 
+  cursor: pointer;
+
   border-radius: ${radius};
   background-color: ${neutral[100]};
   background-color: white;
